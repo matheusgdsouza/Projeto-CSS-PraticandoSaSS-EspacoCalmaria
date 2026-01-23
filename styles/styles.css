@@ -1,0 +1,312 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
+  padding: 2rem;
+}
+header nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  align-items: center;
+}
+header nav .linha {
+  border-top: 1px solid #000000;
+  width: 80%;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+header nav ul li {
+  list-style-type: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #0C0421;
+  font-size: 1.5em;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  transition: transform 0.3s ease, font-weight 0.3s ease;
+}
+header nav ul li a:hover {
+  transform: scale(1.05);
+  font-weight: 600;
+}
+header #home {
+  max-width: 1040px;
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+header #home .textos-home {
+  width: 40%;
+  text-align: justify;
+}
+header #home .textos-home h1 {
+  font-family: "Krona One", sans-serif;
+  line-height: 1.8em;
+  font-size: 2em;
+  font-weight: 600;
+}
+header #home .textos-home span {
+  color: #4E75FF;
+}
+header #home .textos-home .btn-main {
+  margin-top: 1.5rem;
+  padding: 1.2rem 3.5rem;
+  background-color: #4E75FF;
+  color: #FFFFFF;
+  font-size: 1.2em;
+  font-weight: 600;
+  border: none;
+  border-radius: 64px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+header #home .textos-home .btn-main:hover {
+  background-color: #85A0FF;
+}
+header #home .img-home {
+  width: 45%;
+}
+header #home .img-home img {
+  width: 100%;
+}
+
+#nosso-espaco {
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  margin-bottom: 5rem;
+}
+#nosso-espaco .detalhes {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+#nosso-espaco .detalhes .imgs-espaco {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 40%;
+}
+#nosso-espaco .detalhes .imgs-espaco img {
+  width: 100%;
+}
+#nosso-espaco .detalhes .espaco-textos {
+  width: 40%;
+}
+#nosso-espaco .detalhes .espaco-textos .titulo {
+  font-family: "Krona One", sans-serif;
+  color: #4E75FF;
+  font-weight: 400;
+}
+#nosso-espaco .detalhes .espaco-textos .infos {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+}
+#nosso-espaco .detalhes .espaco-textos .separador {
+  width: 100%;
+}
+#nosso-espaco .detalhes:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+#servico {
+  margin-top: 5rem;
+  padding-top: 5rem;
+  background: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
+}
+#servico .cards {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#servico .cards .card {
+  width: 20%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(202, 212, 250, 0.3) 100%);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#servico .cards .card .card-titulo {
+  color: #0C0421;
+  font-family: "Krona One", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+#desconto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10rem 0;
+}
+#desconto .desconto-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#desconto .desconto-form h4 {
+  color: #0C0421;
+  font-family: "Krona One", sans-serif;
+  font-size: 1.8em;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+#desconto .desconto-form p {
+  color: #0C0421;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#desconto .desconto-form .input-btn {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+#desconto .desconto-form .input-btn input {
+  width: 50%;
+  padding: 1rem;
+  border: 1px solid #4E75FF;
+  border-radius: 25px 0 0 25px;
+  font-size: 1em;
+}
+#desconto .desconto-form .input-btn button {
+  width: 25%;
+  padding: 1rem;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  background: #4E75FF;
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+#desconto .desconto-form .input-btn button:hover {
+  background-color: #85A0FF;
+}
+
+#contatos {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+#contatos .contatos-imgs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 45%;
+}
+#contatos .contatos-imgs img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+#contatos .contatos-imgs img:nth-child(1) {
+  grid-column: 1/span 2;
+}
+#contatos .contatos-form {
+  background: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 25px;
+  max-width: 45%;
+}
+#contatos .contatos-form h4 {
+  color: #4E75FF;
+  font-family: "Krona One", sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+#contatos .contatos-form p {
+  color: #0C0421;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  line-height: 1.5em;
+}
+#contatos .contatos-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+#contatos .contatos-form .form-group label {
+  color: #0C0421;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+#contatos .contatos-form .form-group input, #contatos .contatos-form .form-group textarea {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+#contatos .contatos-form .form-group textarea {
+  height: 5rem;
+}
+#contatos .contatos-form .btn {
+  margin: 0 auto;
+  width: 100%;
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  background-color: #4E75FF;
+  font-weight: 600;
+  border-radius: 25px;
+  border: none;
+  padding: 1rem 5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#contatos .contatos-form .btn:hover {
+  background-color: #85A0FF;
+}
+
+footer {
+  margin-top: 5rem;
+  text-align: center;
+  background: #E8F5C8;
+  padding: 1.8rem 0;
+}
+footer small {
+  color: #0C0421;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+}/*# sourceMappingURL=styles.css.map */

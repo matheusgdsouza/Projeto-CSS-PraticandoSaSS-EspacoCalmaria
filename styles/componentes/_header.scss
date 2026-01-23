@@ -1,0 +1,89 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+header {
+    background: variaveis.$gradiente-primario;
+    padding: 2rem;
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+        align-items: center;
+        .linha {
+            border-top: 1px solid #000000;
+            width: 80%;
+        }
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 3rem;
+            li {
+                list-style-type: none;
+                a {
+                    text-decoration: none;
+                    color: variaveis.$cor-primaria;
+                    font-size: 1.5em;
+                    font-weight: 500;
+                    font-family: variaveis.$ft-texto;
+                    display: inline-block;
+                    transition: transform 0.3s ease, font-weight 0.3s ease;
+
+                    &:hover {
+                        transform: scale(1.05);
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+
+    #home {
+        max-width: 1040px;
+        @include mixins.margin-central(80%);
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+
+        .textos-home {
+            width: 40%;
+            text-align: justify;
+            h1 {
+                font-family: variaveis.$ft-titulos;
+                line-height: 1.8em;
+                font-size: 2em;
+                font-weight: 600;
+            }
+
+            span {
+                color: variaveis.$cor-secundario;
+            }
+
+            .btn-main {
+                margin-top: 1.5rem;
+                padding: 1.2rem 3.5rem;
+                background-color: variaveis.$cor-secundario;
+                color: #FFFFFF;
+                font-size: 1.2em;
+                font-weight: 600;
+                border: none;
+                border-radius: 64px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: variaveis.$cor-terciaria;
+                }
+            }
+        }
+
+        .img-home {
+            width: 45%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
